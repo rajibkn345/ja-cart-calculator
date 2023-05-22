@@ -1,0 +1,228 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+li{
+list-style: none;
+}
+#select-element{
+padding: 5px 10px;
+outline: none;
+margin: 5px;
+border-radius: 4px;
+}
+.radio-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	border: 1px solid #fff;
+	font-size: 16px;
+	padding: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+.radio-container.active {
+	border: 1px solid #285486;
+}
+.radio-container:hover {
+	border: 1px solid #285486;
+}
+
+.radio-container input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	position: absolute;
+	top: 40px;
+	left: 5px;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+	background-color: #2196f3;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.radio-container .checkmark:after {
+	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.form-left {
+	width: 100%;
+}
+.form-left span {
+	font-weight: bold;
+	display: block;
+}
+
+.j-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 36px;
+}
+
+.from-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.options-title-wrapper {
+	justify-content: space-between;
+}
+.form-right {
+	background-color: #005486;
+	text-align: center;
+	color: #fff;
+}
+.additional-qoute ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.additional-qoute ul li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.additional-qoute ul li .qoute-right button {
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+.extra-options-check-field {
+	overflow: hidden;
+}
+#listed-items{
+padding: 0;
+}
+.close-btn{
+outline: none;
+border: none;
+background-color: transparent;
+margin-left: 10px;
+}
+.text-bold{
+font-weight: 700;
+}
+.oneOff{
+background-color: #e3f5f5;
+padding: 2px 10px;
+border-radius: 30px;
+}
+
+.custom-card{
+border-radius: 15px;
+border: 1px solid #ccc;
+}
+.w-card-left{
+width: 55%;
+}
+.w-card-right{
+width: 40%;
+height: fit-content;
+background-color: #006b85;
+color: white;
+}
+ul li p{
+margin-bottom: 4px;
+}
+
+.btn-sign-up{
+	cursor: pointer;
+background-color: #ffd975;
+padding: 10px 20px;
+width: 100%;
+text-align: center;
+border-radius: 30px;
+color: #333;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn-sign-up:hover{
+background-color: #e7b73e;
+color: #333;
+}
+
+.unorder-list li{
+list-style:disc;
+}
+.text-quote{
+color: #ffd975;
+}
+
+.fa-xmark{
+color: #72cae0;
+}
+
+.custom-container{
+padding: 20px 5%;
+}
+
+@media screen and (max-width:992px) {
+	.extra-filter{
+	flex-wrap: wrap;
+	}
+	.custom-container{
+	width: 100%;
+	padding: 20px 0;
+	}
+	.w-card-left{
+		width: 50% !important;
+		}
+	.w-card-right{
+		width: 45%;
+
+		}
+}
+
+@media screen and (max-width:768px) {
+	.main{
+	flex-wrap: wrap;
+	}
+	
+	.w-card-left{
+		margin: auto !important;
+		width: 95% !important;
+		}
+	.w-card-right{
+		width: 95%;
+margin: 20px auto !important;
+		}
+}
